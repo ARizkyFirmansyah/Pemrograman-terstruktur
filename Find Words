@@ -7,3 +7,6 @@ bool searchWord(vector<vector<char>>& matrix, string& word, int baris, int kolom
     int jumlahBaris = matrix.size();
     int jumlahKolom = matrix[0].size();
     int panjang = word.length();
+    for (int i = 0; i < panjang; i++) {
+        int barisbaru = baris + i * arahBaris;
+        int kolombaru = kolom + i * arahKolom;
