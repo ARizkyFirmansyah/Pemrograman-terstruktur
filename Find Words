@@ -13,7 +13,8 @@ bool searchWord(vector<vector<char>>& matrix, string& word, int baris, int kolom
         int barisbaru = baris + i * arahBaris;
         int kolombaru = kolom + i * arahKolom;
 
-if (barisbaru < 0 || barisbaru >= jumlahBaris || kolombaru < 0 || kolombaru >= jumlahKolom || matrix[barisbaru][kolombaru] != word[i]) {
+if (barisbaru < 0 || barisbaru >= jumlahBaris || kolombaru < 0 || kolombaru >= jumlahKolom || 
+            tolower(matrix[barisbaru][kolombaru]) != tolower(word[i])) {
             return false;
         }
     }
