@@ -11,3 +11,8 @@ bool searchWord(vector<vector<char>>& matrix, string& word, int baris, int kolom
     for (int i = 0; i < panjang; i++) {
         int barisbaru = baris + i * arahBaris;
         int kolombaru = kolom + i * arahKolom;
+
+if (barisbaru < 0 || barisbaru >= jumlahBaris || kolombaru < 0 || kolombaru >= jumlahKolom || matrix[barisbaru][kolombaru] != word[i]) {
+            return false;
+        }
+    }
