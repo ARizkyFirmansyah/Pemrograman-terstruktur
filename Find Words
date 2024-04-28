@@ -21,9 +21,28 @@ return true;
 }
 
 //Dikerjakan oleh Rizky Firmansyah
-
 bool findWord(vector<vector<char>>& matrix, string& word) {
     int jumlahBaris = matrix.size();
     int jumlahKolom = matrix[0].size();
+
 for (int baris = 0; baris < jumlahBaris; baris++) {
         for (int kolom = 0; kolom < jumlahKolom; kolom++) {
+            if (searchWord(matrix, word, baris, kolom, 0, 1)   ||
+                searchWord(matrix, word, baris, kolom, 0, -1)  ||
+                searchWord(matrix, word, baris, kolom, 1, 0)   || 
+                searchWord(matrix, word, baris, kolom, -1, 0)  ||
+                searchWord(matrix, word, baris, kolom, 1, 1)   || 
+                searchWord(matrix, word, baris, kolom, -1, -1) ||
+                searchWord(matrix, word, baris, kolom, -1, 1)  || 
+                searchWord(matrix, word, baris, kolom, 1, -1)) 
+            {
+                return true;
+            }
+        }
+    }
+
+
+    return false;
+}
+
+}
