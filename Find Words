@@ -17,5 +17,5 @@ if (barisbaru < 0 || barisbaru >= jumlahBaris || kolombaru < 0 || kolombaru >= j
             return false;
         }
     }
-return true; // Semua karakter cocok, kata ditemukan
+return true;
 }
