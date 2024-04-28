@@ -1,1 +1,6 @@
-
+Alur kerja program:
+program terdiri dari 3 fungsi, 1 main function dan 2 fungsi pendukung
+dengan mekanisme sebagai berikut:
+-searchWord function yang berfungsi mencocokkan kata dengan matrix melalui posisi/koordinat yang sudah ditentukan
+-findWord function berfungsi menentukan arah dari pencarian yang akan dilakukan searchWord function
+-main function akan menerima input dari kata yang akan dicari dan mengkonfirmasi keberadaan kata yang dicari oleh user dengan mengeluarkan output 'Ada' jika cocok, dan 'Tidak Ada' jika tidak cocok dengan matrix
