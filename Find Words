@@ -8,6 +8,7 @@ bool searchWord(vector<vector<char>>& matrix, string& word, int baris, int kolom
     int jumlahBaris = matrix.size();
     int jumlahKolom = matrix[0].size();
     int panjang = word.length();
+
     for (int i = 0; i < panjang; i++) {
         int barisbaru = baris + i * arahBaris;
         int kolombaru = kolom + i * arahKolom;
@@ -16,3 +17,5 @@ if (barisbaru < 0 || barisbaru >= jumlahBaris || kolombaru < 0 || kolombaru >= j
             return false;
         }
     }
+return true; // Semua karakter cocok, kata ditemukan
+}
