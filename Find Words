@@ -19,3 +19,10 @@ if (barisbaru < 0 || barisbaru >= jumlahBaris || kolombaru < 0 || kolombaru >= j
     }
 return true;
 }
+
+//Dikerjakan oleh Rizky Firmansyah
+
+bool findWord(vector<vector<char>>& matrix, string& word) {
+    int jumlahBaris = matrix.size();
+    int jumlahKolom = matrix[0].size();
+
