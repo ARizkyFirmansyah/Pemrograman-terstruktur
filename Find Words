@@ -1,7 +1,8 @@
-include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 
+//Dikerjakan oleh Elena Oktaviani
 using namespace std;
 bool searchWord(vector<vector<char>>& matrix, string& word, int baris, int kolom, int arahBaris, int arahKolom) {
     int jumlahBaris = matrix.size();
