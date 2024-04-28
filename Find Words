@@ -3,3 +3,7 @@ include <iostream>
 #include <string>
 
 using namespace std;
+bool searchWord(vector<vector<char>>& matrix, string& word, int baris, int kolom, int arahBaris, int arahKolom) {
+    int jumlahBaris = matrix.size();
+    int jumlahKolom = matrix[0].size();
+    int panjang = word.length();
